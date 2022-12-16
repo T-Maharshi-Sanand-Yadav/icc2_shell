@@ -19,8 +19,8 @@ icc2_shell> help *floorplan*
  set_floorplan_length_rules 						# Create a floorplan length rule
  set_floorplan_location_rules 						# Create a floorplan location rule
  set_floorplan_reshape_rules 						# Create a floorplan reshape rule
- set_floorplan_rule_description 					# Sets a description for a floorplan rule
- set_floorplan_spacing_rules 						# Create a floorplan spacing rule
- set_floorplan_unplaceable_area_extension_rules 	# Create a floorplan unplaceable area extension rule
+ set_floorplan_rule_description 					              # Sets a description for a floorplan rule
+ set_floorplan_spacing_rules 						                # Create a floorplan spacing rule
+ set_floorplan_unplaceable_area_extension_rules 	  # Create a floorplan unplaceable area extension rule
  set_floorplan_width_rules 							# Create a floorplan width rule
  write_floorplan      								# Write floorplan
