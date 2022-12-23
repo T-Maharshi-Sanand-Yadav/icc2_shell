@@ -32,3 +32,23 @@ Click on save_lib
 ![image](https://user-images.githubusercontent.com/104819057/209365017-99f0bdbf-8d0f-4fbd-842d-f64fac36a869.png)
 ![image](https://user-images.githubusercontent.com/104819057/209365052-aa87cd33-d4b0-457e-91af-95a556bc18e6.png)
 ![image](https://user-images.githubusercontent.com/104819057/209365072-737c3fa9-b97e-4f89-94c2-149e7a753c99.png)
+
+Click on close_lib
+![image](https://user-images.githubusercontent.com/104819057/209365187-8b0b2078-1828-46e6-8c6a-6e4e5117244a.png)
+![image](https://user-images.githubusercontent.com/104819057/209365220-634d5650-e368-45bf-bb7b-20036d2125e2.png)
+![image](https://user-images.githubusercontent.com/104819057/209365255-425cb9ff-495e-4534-b578-b256acbffab1.png)
+
+Click on move_lib
+![image](https://user-images.githubusercontent.com/104819057/209365593-df7199c5-84eb-4ef4-9c9e-7db464f4d581.png)
+![image](https://user-images.githubusercontent.com/104819057/209365629-b67cfee9-e25a-4541-9be1-4aa46e87deec.png)
+
+Click on current_lib
+![image](https://user-images.githubusercontent.com/104819057/209365705-20fbe743-5374-4087-b0b7-3982be75a9aa.png)
+![image](https://user-images.githubusercontent.com/104819057/209365735-d1cc596f-1727-4a11-986c-17d770df88b3.png)
+
+Click on get_libs
+![image](https://user-images.githubusercontent.com/104819057/209365814-1132b096-0a99-4195-b283-46fc78305233.png)
+![image](https://user-images.githubusercontent.com/104819057/209365901-a90c100d-1110-49aa-acf4-abf3dc5c82af.png)
+![image](https://user-images.githubusercontent.com/104819057/209365937-de2c67fb-35f6-4aa1-b240-5c7c2cf804d4.png)
+
+
