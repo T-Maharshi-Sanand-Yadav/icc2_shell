@@ -1,0 +1,462 @@
+icc2_shell> create_lib -
+base_lib               ref_libs               use_parasitic_tech_lib
+convert_sites          scale_factor           use_technology_lib
+dont_set_current       technology
+/////////////////////////////////////////////////////////////////////////////
+icc2_shell> report_app_var
+Variable                Value     Type    Default    Constraints
+----------------------- --------- ------- ---------- -----------------------
+filter_collection_extended_syntax true bool true
+in_gui_session          true      string  false
+link_library                      string
+query_objects_format    Tcl       string  Tcl        {Tcl Legacy}
+scaling_enable_performance_mode true bool true
+search_path             .         string  .
+sh_allow_tcl_with_set_app_var true bool   true
+sh_allow_tcl_with_set_app_var_no_message_list string
+sh_arch                 linux64   string  linux64
+sh_command_abbrev_mode  Anywhere  string  Anywhere   {Anywhere Command-Line-Only None}
+sh_command_abbrev_options true    bool    true
+sh_command_log_file     icc2_command.log string icc2_command.log
+sh_continue_on_error    false     bool    false
+sh_deprecated_is_error  false     bool    false
+sh_dev_null             /dev/null string  /dev/null
+sh_enable_page_mode     false     bool    false
+sh_enable_stdout_redirect true    bool    true
+sh_help_shows_group_overview true bool    true
+sh_obsolete_is_error    false     bool    false
+sh_output_log_file      icc2_output.txt string icc2_output.txt
+sh_product_version      S-2021.06-SP5 string S-2021.06-SP5
+sh_script_stop_severity None      string  None       {E W None}
+sh_source_emits_line_numbers None string  None       {E W None}
+sh_source_logging       false     bool    false
+sh_source_uses_search_path true   bool    true
+sh_tcllib_app_dirname   icc2      string  icc2
+sh_user_man_path                  string
+synopsys_program_name   icc2_shell string icc2_shell
+synopsys_root           /usr/synopsys/icc2/S-2021.06-SP5/ string /usr/synopsys/icc2/S-2021.06-SP5/
+tcl_interactive         0         string  0
+tcl_library             /usr/synopsys/icc2/S-2021.06-SP5//auxx/tcllib/lib/tcl8.6 string /usr/synopsys/icc2/S-2021.06-SP5//auxx/tcllib/lib/tcl8.6
+tcl_pkgPath             /usr/synopsys/icc2/S-2021.06-SP5//auxx/tcllib/lib/tcl8.6 string /usr/synopsys/icc2/S-2021.06-SP5//auxx/tcllib/lib/tcl8.6
+icc2_shell>
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> initialize_floorplan -
+boundary            honor_pad_limit     keep_pg_route       row_pattern
+coincident_boundary keep_all            keep_placement      shape
+control_type        keep_boundary       macro_utilization   side_length
+core_offset         keep_detail_route   orientation         side_ratio
+core_utilization    keep_object_types   origin_offset       site_def
+flip_first_row      keep_objects        row_core_ratio      use_site_row
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> repo
+report_3d_chip_placement
+report_abstracts
+report_active_clips
+report_activity
+report_annotated_check
+report_annotated_delay
+report_annotated_power
+report_annotated_transition
+report_antenna_rules
+report_aocvm
+report_app_options
+report_app_var
+report_attachments
+report_attributes
+report_auto_floorplan_constraints
+report_auto_save
+report_autoungroup_options
+report_background_jobs
+report_block_pin_constraints
+report_block_shaping
+report_block_to_top_map
+report_boundary_cell_rules
+report_bounds
+report_budget
+report_buffer_trees
+report_bundle_pin_constraints
+report_bundles
+report_busplan_constraints
+report_busplans
+report_case_analysis
+report_ccd_timing
+report_cell_array_patterns
+report_cell_buses
+report_cell_em
+report_cell_em_profiles
+report_cell_feasible_space
+report_cell_modes
+report_cell_pin_access
+report_cells
+report_check_design_strategy
+report_checkpoint_options
+report_clock_balance_groups
+report_clock_balance_points
+report_clock_cell_spacings
+report_clock_gating
+report_clock_gating_checks
+report_clock_gating_enable_condition
+report_clock_gating_tree_options
+report_clock_jitter
+report_clock_power
+report_clock_qor
+report_clock_routing_rules
+report_clock_settings
+report_clock_skew_groups
+report_clock_timing
+report_clock_tree_options
+report_clock_tree_reference_subset
+report_clock_trunk_endpoints
+report_clock_trunk_qor
+report_clocks
+report_collection
+report_comments
+report_congestion
+report_constraint_groups
+report_constraint_mapping_file
+report_constraints
+report_corners
+report_cross_probing
+report_cross_probing_files
+report_crpr
+report_ctp_constraints
+report_delay_calculation
+report_density_gradient_options
+report_design
+report_design_mismatch
+report_design_rules
+report_device_constraint
+report_device_group
+report_dff_connections
+report_dft_ring
+report_disable_tie_insert
+report_disable_timing
+report_dont_touch
+report_drc_errors
+report_early_data_checks
+report_eco_bus_buffer_patterns
+report_eco_physical_changes
+report_eco_placement_net_weight
+report_edit_groups
+report_editability
+report_ems_database
+report_ems_rules
+report_essential_points
+report_exceptions
+report_extraction_options
+report_failsafe_fsm_groups
+report_failsafe_fsm_rules
+report_fanin_sequential_clock_gating_objects
+report_fanin_sequential_clock_gating_options
+report_feedthroughs
+report_first_track_line
+report_floorplan_rules
+report_frame_properties
+report_freeze_ports
+report_fsm
+report_global_timing
+report_grids
+report_groups
+report_gui_stroke_bindings
+report_gui_stroke_builtins
+report_hier_check_description
+report_hierarchy
+report_host_options
+report_hot_spots
+report_ideal_network
+report_ignored_layers
+report_incomplete_upf
+report_individual_pin_constraints
+report_io_guides
+report_io_rings
+report_isolate_ports
+report_ivm
+report_keepout_margins
+report_latch_loop_groups
+report_lc_status
+report_lib
+report_lib_cells
+report_lib_pins
+report_lib_timing_arcs
+report_macro_constraints
+report_macro_relative_location
+report_manufacturing_shapes
+report_matching_types
+report_mibs
+report_min_period
+report_min_pulse_width
+report_mismatch_configs
+report_missing_via_check_options
+report_modeless_antenna_rules
+report_modes
+report_module_connectivity_congestion
+report_msg
+report_multi_input_switching_coefficient
+report_multi_vth_constraint
+report_multibit
+report_multisource_clock_sink_groups
+report_multisource_clock_subtree_constraints
+report_multisource_clock_subtree_options
+report_multisource_clock_tap_options
+report_multistage_timing
+report_mv_cells
+report_mv_design
+report_mv_lib_cells
+report_mv_path
+report_name_rules
+report_names
+report_net_buses
+report_net_estimation_rules
+report_net_fanout
+report_net_weight_effort
+report_nets
+report_noise
+report_ocvm
+report_optimize_dft_options
+report_parallel
+report_parasitic_parameters
+report_parasitics
+report_path_groups
+report_pg_mask_constraints
+report_pg_patterns
+report_pg_regions
+report_pg_strategies
+report_pg_strategy_via_rules
+report_pg_via_master_rules
+report_pin_blockages
+report_pin_buses
+report_pin_constraints
+report_pin_guides
+report_pin_name_synonym
+report_pin_placement
+report_placement
+report_placement_attractions
+report_placement_ir_drop_target
+report_placement_spacing_rules
+report_pop_up_object_options
+report_port_buses
+report_port_protection_diodes
+report_ports
+report_power
+report_power_budget
+report_power_calculation
+report_power_clock_scaling
+report_power_derate
+report_power_domains
+report_power_groups
+report_power_io_constraints
+report_power_model
+report_power_scopes
+report_power_switch_patterns
+report_power_switch_placement_patterns
+report_pr_rules
+report_programmable_spare_cell_mapping_rule
+report_pst
+report_pt_options
+report_push_down_object_options
+report_pvt
+report_qor
+report_qor_snapshot
+report_rail_command_options
+report_rail_minimum_path
+report_rail_result
+report_rail_scenario
+report_rdl_routes
+report_ref_libs
+report_references
+report_regular_multisource_clock_tree_options
+report_repeater_group_constraints
+report_repeater_groups
+report_routing_corridors
+report_routing_guides
+report_routing_rules
+report_rp_groups
+report_rx_width_violations
+report_sadp_track_rule
+report_safety_core_groups
+report_safety_core_rules
+report_safety_error_code_groups
+report_safety_error_code_rules
+report_safety_logic_port_map
+report_safety_register_groups
+report_safety_register_rules
+report_safety_status
+report_scan_chains
+report_scenarios
+report_script_runtime
+report_secondary_pg_placement_constraints
+report_self_gating_objects
+report_self_gating_options
+report_shape_patterns
+report_shaping_channels
+report_shaping_constraints
+report_shaping_options
+report_shields
+report_si_calculation
+report_signal_em
+report_signal_io_constraints
+report_site_defs
+report_size_only
+report_stage
+report_starrc_in_design
+report_starrc_options
+report_statements
+report_stub_chains
+report_supernet_exceptions
+report_supply_nets
+report_supply_ports
+report_supply_sets
+report_switching_activity
+report_tap_boundary_wall_cell_rules
+report_taps
+report_target_library_subset
+report_tech_diff
+report_threshold_voltage_groups
+report_timing
+report_timing_derate
+report_tool_options
+report_topological_constraints
+report_topology_plans
+report_trace
+report_track_constraints
+report_tracks
+report_transformed_registers
+report_transitive_fanin
+report_transitive_fanout
+report_unbound
+report_user_units
+report_utilization
+report_vclp_options
+report_versions
+report_via_defs
+report_via_ladder_candidates
+report_via_ladder_constraints
+report_via_ladder_rules
+report_via_ladder_summary
+report_via_ladders
+report_via_mapping
+report_via_matrixes
+report_via_regions
+report_via_rules
+report_virtual_pads
+report_voltage_area_rules
+report_voltage_areas
+////////////////////////////////////////////////////////////////////////////////////////
+initialize_floorplan -core_utilization 0.5 -shape L
+initialize_floorplan -core_utilization 0.5 -shape T
+initialize_floorplan -core_utilization 0.5 -shape U
+//////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> create_placement -
+buffering_aware_timing_driven floorplan                     timing_driven
+congestion                    from                          use_seed_locs
+congestion_effort             host_options
+effort                        incremental
+///////////////////////////////////////////////////////////////////////////////////
+icc2_shell> create_net -
+cell     design   ground   power    tie_high tie_low
+/////////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> create_pg_ring_pattern -
+corner_bridge      nets               side_width         vertical_width
+horizontal_layer   parameters         track_alignment    via_rule
+horizontal_spacing side_layer         vertical_layer
+horizontal_width   side_spacing       vertical_spacing
+//////////////////////////////////////////////////////////////////////////////////////////
+create_pg_ring_pattern -horizontal_layer M7 -vertical_layer M8 -horizontal_width 1 -vertical_width 1 -horizontal_spacing 1 -vertical_spacing 1
+/////////////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> set_pg_strategy -
+blockage        core            extension       pattern         polygon
+blocks          design_boundary macros          pg_regions      voltage_areas
+///////////////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> history
+     1  read_verilog {/ve/home/maharshi/assignments/design/design_1.v} -library tmsy_lib_design_1 -design design_1 -top design_1
+     2  create_lib -ref_libs /data/pdk/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_c.ndm tmsy_lib_design_1
+     3  read_verilog {/ve/home/maharshi/assignments/design/design_1.v} -library tmsy_lib_design_1 -design design_1 -top design_1
+     4  link_block
+     5  initialize_floorplan -core_utilization 0.5
+     6  create_placement -floorplan
+     7  create_net -power {VDD VSS}
+     8  create_pg_ring_pattern ring_pattern -horizontal_layer M7 -vertical_layer M8 -horizontal_width {1} -vertical_width {1} -horizontal_spacing {1} -vertical_spacing {1}
+     9  set_pg_strategy core_ring -core -pattern {{name : ring_pattern}{nets : {VDD VSS}}{offset : {3 3}}}
+    10  create_pg_mesh_pattern mesh -layers { {{vertical_layer: M8}{width: 1} {spacing: interleaving}{pitch: 20} {offset: 3}} {{horizontal_layer: M7}{width: 1} {spacing: interleaving} {pitch: 20} {offset: 3}} {{vertical_layer: M6}{width: 1} {spacing: interleaving}{pitch: 20} {offset: 3}}} -via_rule {{{layers: M8}{layers: M7}{via_master: VIA78BAR1}}}
+    11  set_pg_strategy core_mesh -pattern { {pattern:mesh} {nets: VDD VSS}} -core
+    12  compile_pg -strategies {core_mesh core_ring}
+    13  close_blocks -force -purge design_1
+    14  initialize_floorplan -core_utilization 0.5
+    15  initialize_floorplan -core_utilization 0.5 -shape L
+    16  gui_show_man_page DES-001
+    17  gui_set_select_menu_adds_to_selection -value 1
+    18  create_lib -clear
+    19  create_lib -ref_libs /data/pdk/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_c.ndm
+    20  man create_li
+    21  get_app_var
+    22  get_app_var -default
+    23  get_app_var -details
+    24  get_app_var -list
+    25  report_app_var
+    26  report_app_var
+    27  set link_library /data/pdk/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_c.ndm
+    28  #read_verilog
+    29  ls
+    30  cd ..
+    31  ls
+    32  cd design/
+    33  ls
+    34  read_verilog mealy1001.v
+    35  ls
+    36  read_verilog picorv32a.v
+    37  read_verilog picorv32a.v -design picorv32 -top picorv32
+    38  ls
+    39  read_verilog Synchronous_Up_Counter_4bit.v -design Synchronous_Up_Counter_4bit
+    40  ls
+    41  read_verilog mealy_1011_sequence.v -design mealy_1011_sequence -top mealy_1011_sequence
+    42  ls
+    43  cd ..
+    44  ls
+    45  cd design/
+    46  ls
+    47  read_verilog picorv32.routed.v
+    48  link_block
+    49  initialize_floorplan -core_utilization 0.5 -shape L
+    50  report_utilization
+    51  report_activ
+    52  report_activity
+    53  report_app_options
+    54  report_app_var
+    55  report_attributes
+    56  report_block_shaping
+    57  report_cell
+    58  report_clock_power
+    59  report_clocks
+    60  report_fsm
+    61  report_keepout_margins
+    62  report_lib_cells
+    63  report_lib_cells saed32rvt_c.ndm
+    64  report_lib_cells saed32rvt_c.ndm/*
+    65  report_lib_cells saed32rvt_c/*
+    66  report_lib_cells -objects saed32rvt_c
+    67  report_lib_cells -objects saed32rvt_c.ndm
+    68  report_lib_cells -objects saed32rvt_c.ndm/*
+    69  create_placement -floorplan
+    70  check_legality
+    71  explore_logic_hierarchy -place -rectangular
+    72  create_net -power {VDD VSS}
+    73  create_net -power VDD
+    74  create_net -ground VSS
+    75  create_pg_ring_pattern -horizontal_layer M1 -vertical_layer M2 -horizontal_width 1 -vertical_width 1 -horizontal_spacing 1 -vertical_spacing 1
+    76  create_pg_ring_pattern -horizontal_layer M7 -vertical_layer M8 -horizontal_width 1 -vertical_width 1 -horizontal_spacing 1 -vertical_spacing 1
+    77  man create_pg_ring_pattern
+    78  create_pg_ring_pattern ring_pattern -horizontal_layer M7 -vertical_layer M8 -horizontal_width 1 -vertical_width 1 -horizontal_spacing 1 -vertical_spacing 1
+    79  compile_pg
+    80  man set_pg_strategy
+    81  set_pg_strategy core_ring -core -pattern {{name : ring_pattern}{nets : {VDD VSS}}{offset : {3 3}}}
+    82  compile_pg
+    83  history
+icc2_shell>
+////////////////////////////////////////////////////////////////////////////////////
+icc2_shell> place_pins -
+cells                        nets                         ports
+exclude_nets                 nets_to_exclude_from_routing self
+legalize                     pins                         use_existing_routing
+
+read_verilog {shift_right_register_4_bit_dff.v DFF_POSEDGE_TRIGGER.v} -design shift_right_register_4_bit_dff -top shift_right_register_4_bit_dff -library tmsy_lib_siso
+read_verilog {Fourbit_CLA.v} -design Fourbit_CLA -top Fourbit_CLA -library tmsy_lib_siso
